@@ -66,3 +66,6 @@ gem 'sassc-rails', '>= 2.1.0'
 
 #User authentication
 gem 'devise'
+
+#Notification styling
+gem 'toastr-rails'

@@ -24,6 +24,11 @@
         <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class: "form-control" %>
       </div>
 
+      <div class="form-group">
+        <%= f.label "Upload Profile Photo (Optional)" %>
+        <%= f.file_field :avatar, class: "form-control", placeholder: "Upload Profile Photo" %>
+      </div>
+
       <div class="actions">
         <%= f.submit "Sign up", class: "btn btn-primary" %>
       </div>

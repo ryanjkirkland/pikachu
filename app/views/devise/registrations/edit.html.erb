@@ -35,6 +35,18 @@
         <%= f.password_field :current_password, autocomplete: "current-password", placeholder: "Current Password", class: "form-control" %>
       </div>
 
+      <div class="form-group">
+        <%= f.label "Current Profile Photo:" %>
+        <% if @user.avatar.attached? %>
+          <image src="<%=(url_for(@user.avatar))%>">
+        <% end %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label "Upload Profile Photo (Optional)" %>
+        <%= f.file_field :avatar, class: "form-control", placeholder: "Upload Profile Photo" %>
+      </div>
+
       <div class="actions">
         <%= f.submit "Update", class: "btn btn-primary" %>
       </div>
