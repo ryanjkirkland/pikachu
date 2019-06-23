@@ -69,3 +69,6 @@ gem 'devise'
 
 #Notification styling
 gem 'toastr-rails'
+
+#Clean database for testing
+gem 'database_cleaner', '~> 1.7'
