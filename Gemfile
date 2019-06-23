@@ -72,3 +72,7 @@ gem 'toastr-rails'
 
 #Clean database for testing
 gem 'database_cleaner', '~> 1.7'
+
+#facebook user authentication
+gem 'omniauth'
+gem 'omniauth-facebook'
