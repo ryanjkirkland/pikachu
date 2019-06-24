@@ -20,6 +20,8 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
                 <% if current_user.avatar.attached? %>
                   <image src="<%=(url_for(current_user.avatar))%>", class="img-circle avatar_med">
+                <% elsif current_user.image %>
+                  <image src="<%= current_user.image%>", class="img-circle avatar_med">
                 <% end %>
                 <%= current_user.email %> 
                 <span class="caret"></span></a>
