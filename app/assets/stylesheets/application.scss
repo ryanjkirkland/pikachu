@@ -114,6 +114,35 @@ hr {
 	background-color: #2d467b;
 }
 
+.panel-default .panel-heading {
+	color: #fff;
+	background-color: #00a699;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.row-space-1 {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.row-space-2 {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.row-space-3 {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.description {
+	color: #575757;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
 .avatar_small {
 	height: 30px;
 	width: 30px;
@@ -122,4 +151,8 @@ hr {
 .avatar_med {
 	height: 50px;
 	width: 50px;
+}
+
+.avatar_full {
+	width: 100%;
 }
