@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get 'photo_upload'
       get 'amenities'
       get 'location'
+      delete 'delete_image'
     end
     resources :images, only: [:create, :destroy]
   end

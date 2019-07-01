@@ -1,12 +1,26 @@
 <br/>
 <div class="row">
+
 	<% @room.images.each do |image| %>
+
 		<div class="col-md-4">
+
 			<div class="panel panel-default">
+
 				<div class="panel-heading preview">
-					<image src="<%=(url_for(image))%>", width="100%">
+					<image src="<%=(url_for(image))%>", width="100%"></image>
 				</div>
+
+				<div class="panel-body">
+					<span class="pull-right">
+							<%= link_to '<i class="fa fa-trash" aria-hidden="true"></i>'.html_safe, delete_image_room_path(image), method: :delete, data: {confirm: "Are you sure?"} %>
+					</span>
+				</div>
+
 			</div>
+
 		</div>
+
 	<% end %>
+
 </div>

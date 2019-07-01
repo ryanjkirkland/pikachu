@@ -1,6 +1,6 @@
 class RoomsController < ApplicationController
   
-  before_action :set_room, except: [:index, :new, :create]
+  before_action :set_room, except: [:index, :new, :create, :delete_image]
   before_action :authenticate_user!, except: [:show]
 
   def index
@@ -40,6 +40,12 @@ class RoomsController < ApplicationController
   end
 
   def location
+  end
+
+  def delete_image
+    @images = ActiveStorage::Attachment.find(params[:id])
+    @images.purge
+    redirect_back(fallback_location: request.referer)
   end
 
   def update
