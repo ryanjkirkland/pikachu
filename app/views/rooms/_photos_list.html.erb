@@ -1,0 +1,12 @@
+<br/>
+<div class="row">
+	<% @room.images.each do |image| %>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading preview">
+					<image src="<%=(url_for(image))%>", width="100%">
+				</div>
+			</div>
+		</div>
+	<% end %>
+</div>

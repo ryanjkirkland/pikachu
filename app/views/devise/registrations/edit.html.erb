@@ -53,7 +53,11 @@
       <div class="form-group">
         <%= f.label "Current Profile Photo:" %>
         <% if @user.avatar.attached? %>
-          <image src="<%=(url_for(@user.avatar))%>">
+          <br/>
+          <image src="<%=(url_for(current_user.avatar))%>", class="img-circle avatar_med">
+        <% elsif current_user.image %>
+          <br/>
+          <image src="<%= current_user.image%>", class="img-circle avatar_med">
         <% end %>
       </div>
 
