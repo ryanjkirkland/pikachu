@@ -27,10 +27,6 @@ a {
 	color: #00a699;
 }
 
-hr {
-	margin: 5px;
-}
-
 .container {
 	width: 80%;
 }
@@ -244,4 +240,16 @@ hr {
 	color: #565a5c;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.amenities li {
+	margin-bottom: 10px;
+	font-size: 16px;
+	list-style-type: none;
+}
+
+.amenities .text-line-through {
+	text-decoration: line-through;
+	color: rgba(0,0,0,0.45);
+	font-size: 14px;
 }
