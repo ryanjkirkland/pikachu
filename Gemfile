@@ -76,3 +76,5 @@ gem 'database_cleaner', '~> 1.7'
 #facebook user authentication
 gem 'omniauth'
 gem 'omniauth-facebook'
+
+gem 'geocoder'
