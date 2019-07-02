@@ -7,5 +7,4 @@ class Room < ApplicationRecord
   validates :accomodate, presence: true
   validates :bed_room, presence: true
   validates :bath_room, presence: true
-  validates :images, presence: true
 end
