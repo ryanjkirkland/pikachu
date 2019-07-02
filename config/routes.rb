@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       delete 'delete_image'
     end
     resources :images, only: [:create, :destroy]
+    resources :reservations, only: [:create]
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
