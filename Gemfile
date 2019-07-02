@@ -78,3 +78,4 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 
 gem 'geocoder'
+gem 'jquery-ui-rails'
